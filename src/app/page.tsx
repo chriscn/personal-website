@@ -24,7 +24,7 @@ const projects: Project[] = [
 
 export default function IndexPage() {
 	return (
-		<main className="h-screen flex flex-col items-center justify-center bg-slate-50 font-serif">
+		<main className="h-screen flex flex-col items-center justify-center font-serif">
 			<section className="m-4 space-y-4 max-w-screen-sm w-full p-4">
 				<div className="flex flex-row space-x-4 items-center text-slate-800">
 					<Image
