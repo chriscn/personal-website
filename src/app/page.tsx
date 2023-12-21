@@ -24,7 +24,7 @@ const projects: Project[] = [
 
 export default function IndexPage() {
 	return (
-		<main className="h-svh flex flex-col items-center justify-center font-serif dark:bg-slate-800 dark:text-slate-300">
+		<main className="h-svh flex flex-col items-center justify-center font-serif dark:bg-slate-800 dark:text-slate-100">
 			<div className="space-y-4 max-w-screen-sm w-full p-4">
 				<section className="flex flex-row space-x-4 items-center">
 					<Image
@@ -34,7 +34,7 @@ export default function IndexPage() {
 						className="rounded-xl"
 						alt="Christopher Nethercott profile picture"
 					/>
-					<div className="text-slate-800 dark:text-slate-200">
+					<div className="text-slate-800 dark:text-slate-50">
 						<h1 className="text-2xl font-bold">Christopher Nethercott</h1>
 						<p>Infrastructure stuff at a University</p>
 					</div>
