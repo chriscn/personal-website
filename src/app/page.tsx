@@ -12,7 +12,7 @@ const projects: Project[] = [
 		name: "University of York's Week Numbers",
 		description:
 			"iCalendar (RFC 5545) format of the University of York's week numbers; now with semester support!",
-		url: "https://github.com/chriscn/uoy-week-numbers",
+		url: "https://github.com/chriscn/uoy-week-calendar",
 	},
 	{
 		name: "Dispixel",
@@ -24,9 +24,9 @@ const projects: Project[] = [
 
 export default function IndexPage() {
 	return (
-		<main className="h-screen flex flex-col items-center justify-center font-serif">
-			<section className="m-4 space-y-4 max-w-screen-sm w-full p-4">
-				<div className="flex flex-row space-x-4 items-center text-slate-800">
+		<main className="h-svh flex flex-col items-center justify-center font-serif dark:bg-slate-800 dark:text-slate-300">
+			<div className="space-y-4 max-w-screen-sm w-full p-4">
+				<section className="flex flex-row space-x-4 items-center">
 					<Image
 						src="/profile.png"
 						width="100"
@@ -34,12 +34,12 @@ export default function IndexPage() {
 						className="rounded-xl"
 						alt="Christopher Nethercott profile picture"
 					/>
-					<div>
+					<div className="text-slate-800 dark:text-slate-200">
 						<h1 className="text-2xl font-bold">Christopher Nethercott</h1>
 						<p>Infrastructure stuff at a University</p>
 					</div>
-				</div>
-				<div className="flex flex-col sm:flex-row justify-between">
+				</section>
+				<section className="flex flex-col sm:flex-row justify-between">
 					<div className="w-full">
 						<h1 className="text-xl">projects:</h1>
 						<ul>
@@ -56,8 +56,8 @@ export default function IndexPage() {
 							))}
 						</ul>
 					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 		</main>
 	);
 }
